@@ -14,8 +14,3 @@ header {
     text-align: center;
     padding: 50px 0;
 }
-
-// Simple JavaScript to show a welcome alert
-window.onload = function() {
-    alert('Welcome to my GitHub Page!');
-}
