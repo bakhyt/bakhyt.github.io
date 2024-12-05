@@ -3,8 +3,8 @@ header .header-photo {
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 200px; /* Set the image to 2x size */
-    height: 200px; /* Set the height to 2x size */
+    width: 200px !important; /* Force the image to 2x size */
+    height: 200px !important; /* Force the height to 2x size */
     border-radius: 50%; /* Makes the image round */
     object-fit: cover; /* Ensures the image fits within the specified width and height */
 }
