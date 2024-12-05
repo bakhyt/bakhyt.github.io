@@ -5,6 +5,16 @@ body {
     background-color: #f4f4f9;
     color: #333;
 }
+/* Style for the header photo */
+.header-photo {
+    position: absolute; /* Positions the image absolutely within the header */
+    top: 10px;  /* Adjust the space from the top */
+    left: 10px; /* Adjust the space from the left */
+    width: 80px; /* Set the size of the image (adjust as needed) */
+    height: 80px; /* Set the height of the image (adjust as needed) */
+    border-radius: 50%; /* Makes the image round (optional) */
+    object-fit: cover; /* Ensures the image fits within the specified width and height */
+}
 
 header {
     background-color: #4CAF50;
