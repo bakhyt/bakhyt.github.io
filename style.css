@@ -5,22 +5,24 @@ body {
     background-color: #f4f4f9;
     color: #333;
 }
+
 /* Style for the header photo */
 .header-photo {
     position: absolute; /* Positions the image absolutely within the header */
-    top: 10px;  /* Adjust the space from the top */
-    left: 10px; /* Adjust the space from the left */
-    width: 80px; /* Set the size of the image (adjust as needed) */
-    height: 80px; /* Set the height of the image (adjust as needed) */
-    border-radius: 50%; /* Makes the image round (optional) */
+    top: 20px;  /* Adjust space from the top */
+    left: 20px; /* Adjust space from the left */
+    width: 100px; /* Set the width of the image */
+    height: 100px; /* Set the height of the image */
+    border-radius: 50%; /* Makes the image round */
     object-fit: cover; /* Ensures the image fits within the specified width and height */
 }
 
 header {
+    position: relative; /* Makes header a positioning context for absolute elements like the photo */
     background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 50px 0;
+    padding: 80px 20px 20px 120px; /* Add extra space on the left for the image */
 }
 
 header h1 {
