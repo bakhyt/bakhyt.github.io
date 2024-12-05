@@ -1,16 +1,16 @@
-/* Style for the header photo */
-.header-photo {
-    position: absolute; /* Positions the image absolutely within the header */
-    top: 20px;  /* Adjust the space from the top */
-    left: 20px; /* Adjust the space from the left */
-    width: 200px; /* Enlarged size of the image (2x) */
-    height: 200px; /* Enlarged height of the image (2x) */
-    border-radius: 50%; /* Keeps the image round */
+/* Ensure the photo size is correctly applied */
+header .header-photo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 200px; /* Set the image to 2x size */
+    height: 200px; /* Set the height to 2x size */
+    border-radius: 50%; /* Makes the image round */
     object-fit: cover; /* Ensures the image fits within the specified width and height */
 }
 
 header {
-    position: relative; /* Makes the header a positioning context for the image */
+    position: relative;
     text-align: center;
-    padding: 80px 20px 20px 120px; /* Padding adjusted for the enlarged image */
+    padding: 80px 20px 20px 120px; /* Adjust padding to fit the enlarged image */
 }
