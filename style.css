@@ -92,6 +92,6 @@ img {
     display: block;
     margin-left: 0;
     margin-right: auto;
-    width: 500px; /* Set the width to your desired value */
-    height: auto; /* Maintain the aspect ratio */
+    max-width: 100%;  /* Limit the width to the container's size */
+    height: auto;     /* Maintain the aspect ratio */
 }
