@@ -3,10 +3,10 @@ header .header-photo {
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 200px !important; /* Force the image to 2x size */
-    height: 200px !important; /* Force the height to 2x size */
-    border-radius: 50%; /* Makes the image round */
-    object-fit: cover; /* Ensures the image fits within the specified width and height */
+    width: auto;  /* Allow width to adjust automatically */
+    height: 200px;  /* Set a fixed height, adjust as needed */
+    border-radius: 50%;  /* Makes the image round */
+    object-fit: cover;  /* Ensures the image fits within the specified width and height */
 }
 
 header {
