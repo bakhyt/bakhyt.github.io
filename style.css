@@ -20,7 +20,7 @@ header {
 
 header .header-photo {
     width: 100px;  /* Set a fixed width */
-    height: 100px; /* Set a fixed height */
+    height: auto; /* Set a fixed height */
     border-radius: 50%;  /* Makes the image round */
     object-fit: cover;  /* Ensures the image fits within the specified width and height */
     margin-bottom: 15px;  /* Space between image and text */
