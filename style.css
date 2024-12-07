@@ -1,18 +1,36 @@
-/* Ensure the photo size is correctly applied */
-header .header-photo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: auto;  /* Allow width to adjust automatically */
-    height: 200px;  /* Set a fixed height, adjust as needed */
-    border-radius: 50%;  /* Makes the image round */
-    object-fit: cover;  /* Ensures the image fits within the specified width and height */
-}
-
 header {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 80px 20px 20px 120px; /* Adjust padding to fit the enlarged image */
+    padding: 20px;
+}
+
+header .header-photo {
+    width: 100px;  /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    border-radius: 50%;  /* Makes the image round */
+    object-fit: cover;  /* Ensures the image fits within the specified width and height */
+    margin-bottom: 15px;  /* Space between image and text */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+        text-align: center;  /* Center align the text */
+    }
+
+    header .header-photo {
+        width: 80px;  /* Make the image smaller on mobile */
+        height: 80px; /* Adjust height on mobile */
+    }
+
+    h1, p {
+        margin: 5px 0;  /* Add some space around the text */
+    }
 }
 
 body {
