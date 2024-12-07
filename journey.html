@@ -15,38 +15,38 @@
             <li><a href="index.html">Home</a></li>
         </ul>
     </nav>
-    <main>
-        <section class="journey">
-            <p>My name is Bakhyt Bakiyev, and I was born in Uzbekistan. After completing my secondary education, I received a state grant for my bachelor's degree. Driven by my passion for mathematics, I pursued a degree in applied mathematics at the Faculty of Mathematics, National University of Uzbekistan, where I successfully graduated with a bachelor's degree. However, as my interest in programming grew, I began exploring opportunities to further my studies in computer science.
-            <p>Recognizing India's esteemed reputation in programming, I set my sights on earning a master's degree there. Although I faced setbacks in my first two attempts to secure a scholarship through the Indian Embassy, perseverance eventually paid off. I was awarded a full scholarship from the Indian government to study computer applications at the University of Hyderabad, enabling me to complete my master's degree in computer applications.
-            <p>After several years of teaching computer science, my ambition to deepen my knowledge and engage in research intensified. I applied for the prestigious Kazakhstan presidential scholarship, "Bolashak," and was honored to be awarded a full scholarship for another master's degree. This time, I specialized in software engineering at Bauman State Technical University in Russia. This experience not only solidified my technical expertise but also fueled my passion for research.
+     <main>
+        <section id="journey" class="journey">
+            <p>My name is Bakhyt Bakiyev, and I was born in Uzbekistan. After completing my secondary education, I received a state grant for my bachelor's degree. Driven by my passion for mathematics, I pursued a degree in applied mathematics at the Faculty of Mathematics, National University of Uzbekistan, where I successfully graduated with a bachelor's degree. However, as my interest in programming grew, I began exploring opportunities to further my studies in computer science.</p>
+            <p>Recognizing India's esteemed reputation in programming, I set my sights on earning a master's degree there. Although I faced setbacks in my first two attempts to secure a scholarship through the Indian Embassy, perseverance eventually paid off. I was awarded a full scholarship from the Indian government to study computer applications at the University of Hyderabad, enabling me to complete my master's degree in computer applications.</p>
+            <p>After several years of teaching computer science, my ambition to deepen my knowledge and engage in research intensified. I applied for the prestigious Kazakhstan presidential scholarship, "Bolashak," and was honored to be awarded a full scholarship for another master's degree. This time, I specialized in software engineering at Bauman State Technical University in Russia. This experience not only solidified my technical expertise but also fueled my passion for research.</p>
             <p>To make meaningful contributions to computer science, I sought opportunities to pursue a Ph.D. abroad. In 2021, I was once again privileged to receive the "Bolashak" scholarship, which allowed me to enroll at the University of Birmingham, where I am currently pursuing a Ph.D. in Computer Science.</p>
         </section>
-        <section class="progression">
+        <section id="progression" class="progression">
             <p>Reflecting on my academic journey, I can clearly observe a consistent progression toward increasingly prestigious institutions, and I am now able to predict my next step—toward a postdoc position. According to the QS World Rankings for 2025, the institutions I have attended are ranked as follows:</p>
             <ul>
-                <li><b><i>National University of Uzbekistan</i></b> (781)</li>
-                <li><b><i>University of Hyderabad</i></b> (801)</li>
-                <li><b><i>Bauman State Technical University</i></b> (298)</li>
-                <li><b><i>University of Birmingham</i></b> (80)</li>
+                <li><b>National University of Uzbekistan</b> (781)</li>
+                <li><b>University of Hyderabad</b> (801)</li>
+                <li><b>Bauman State Technical University</b> (298)</li>
+                <li><b>University of Birmingham</b> (80)</li>
             </ul>
-            <p>By analyzing the above rankings, I derived a logarithmic growth model that illustrates my academic progression. The general form of the logarithmic regression model is:</p>
+            <p>Using the above rankings, I derived a logarithmic growth model. The general form of the model is:</p>
             <pre>y = a + b * ln(x)</pre>
-            <p>Where:
+            <p>Where:</p>
             <ul>
                 <li><b>y</b>: Dependent variable (QS World Ranking).</li>
-                <li><b>x</b>: Independent variable (academic step: 1 = first institution, 2 = second, etc.).</li>
-                <li><b>a</b>, <b>b</b>: Parameters of the logarithmic function, determined by fitting the model to the data.</li>
+                <li><b>x</b>: Independent variable (academic step).</li>
+                <li><b>a</b>, <b>b</b>: Parameters determined by regression analysis.</li>
             </ul>
-            </p>
-            <p>Using least squares regression, we determined:
+            <p>We calculated:</p>
             <ul>
-                <li><b>a = 903.12</b>: Baseline ranking when ln(x) = 0.</li>
-                <li><b>b = -519.96</b>: Rate of improvement in rankings as x increases.</li>
+                <li><b>a = 903.12</b>: Baseline ranking.</li>
+                <li><b>b = -519.96</b>: Improvement rate in rankings.</li>
             </ul>
-            Thus, the final equation becomes:</p>
-            <p><b><i>y = 903.12 − 519.96 * ln(x)</i></b></p>
-            <img src="academic-journey-graph.jpg" alt="A graph illustrating academic progression with rankings.">
+            <p>The final equation is:</p>
+            <p><b>y = 903.12 − 519.96 * ln(x)</b></p>
+            <p>and the graph below illustrates this progression:</p>
+            <img src="academic-journey-graph.jpg" alt="Graph showing academic progression with rankings.">
         </section>
         <section class="conclusion">
             <p>It is my sincere hope that, with the grace of <b><i>God</i></b>, I will complete my Ph.D. at the University of Birmingham first. I humbly recognize that all plans are subject to <b><i>God's will</i></b>, as the saying goes: <b><i>"Man assumes, and God disposes."</i></b></p>
