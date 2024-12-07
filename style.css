@@ -67,8 +67,9 @@ header p {
 .spaced-nav {
     padding-top: 2px;
     padding-bottom: 2px;
-    margin-bottom: 2px;
-    margin-left: 20px; /* Adds space to the left side */
+    margin-top: 0; /* Remove extra space above */
+    margin-bottom: 0; /* Remove extra space below */
+    margin-left: 20px; /* Adds space to the left */
 }
 
 nav ul {
