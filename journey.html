@@ -23,13 +23,31 @@
             <p>To make meaningful contributions to computer science, I sought opportunities to pursue a Ph.D. abroad. In 2021, I was once again privileged to receive the "Bolashak" scholarship, which allowed me to enroll at the University of Birmingham, where I am currently pursuing a Ph.D. in Computer Science.</p>
         </section>
         <section class="progression">
-            <p>Reflecting on my academic journey, I can clearly observe a consistent progression toward increasingly prestigious institutions, and I am now able to predict my next step—toward a postdoc position. According to the QS World Rankings for 2025, the institutions I have attended are ranked as follows: the <b><i>National University of Uzbekistan</i></b> (<b>781</b>), the <b><i>University of Hyderabad</i></b> (<b>801</b>), <b><i>Bauman State Technical University</i></b> (<b>298</b>), and the <b><i>University of Birmingham</i></b> (<b>80</b>). 
-            <br/>By analyzing the above rankings, I have derived a logarithmic growth model that illustrates my academic progression:
-            <br/><b><i>y = 903.12 − 519.96 * ln(x),</i></b> 
-            <br/>and its graph is shown below:</p>
-            <img src="academic-journey-graph.jpg" alt="Progression Graph">
-            <p>The <span style="color: blue;">blue points</span> in the above graph represent the actual rankings, while the <span style="color: red;">red line</span> corresponds to the fitted logarithmic growth model, demonstrating a clear progression toward increasingly prestigious institutions. The <span style="color: green;">green point</span> predicts the rank of my next institution (postdoc position), which the model estimates to be <b>66th</b>.
-            <br/>According to the QS World University Rankings 2025, the 66th position is held by the <b><i>University of Texas at Austin</i></b> in the USA (source: <a href="https://www.topuniversities.com/universities/university-texas-austin">QS World University Rankings 2025</a>).</p>
+            <p>Reflecting on my academic journey, I can clearly observe a consistent progression toward increasingly prestigious institutions, and I am now able to predict my next step—toward a postdoc position. According to the QS World Rankings for 2025, the institutions I have attended are ranked as follows:</p>
+            <ul>
+                <li><b><i>National University of Uzbekistan</i></b> (781)</li>
+                <li><b><i>University of Hyderabad</i></b> (801)</li>
+                <li><b><i>Bauman State Technical University</i></b> (298)</li>
+                <li><b><i>University of Birmingham</i></b> (80)</li>
+            </ul>
+            <p>By analyzing the above rankings, I derived a logarithmic growth model that illustrates my academic progression. The general form of the logarithmic regression model is:</p>
+            <pre>y = a + b * ln(x)</pre>
+            <p>Where:
+            <ul>
+                <li><b>y</b>: Dependent variable (QS World Ranking).</li>
+                <li><b>x</b>: Independent variable (academic step: 1 = first institution, 2 = second, etc.).</li>
+                <li><b>a</b>, <b>b</b>: Parameters of the logarithmic function, determined by fitting the model to the data.</li>
+            </ul>
+            </p>
+            <p>Using least squares regression, we determined:
+            <ul>
+                <li><b>a = 903.12</b>: Baseline ranking when ln(x) = 0.</li>
+                <li><b>b = -519.96</b>: Rate of improvement in rankings as x increases.</li>
+            </ul>
+            Thus, the final equation becomes:</p>
+            <p><b><i>y = 903.12 − 519.96 * ln(x)</i></b></p>
+            <img src="academic-journey-graph.jpg" alt="A graph illustrating academic progression with rankings.">
+        </section>
         <section class="conclusion">
             <p>It is my sincere hope that, with the grace of <b><i>God</i></b>, I will complete my Ph.D. at the University of Birmingham first. I humbly recognize that all plans are subject to <b><i>God's will</i></b>, as the saying goes: <b><i>"Man assumes, and God disposes."</i></b></p>
         </section>
