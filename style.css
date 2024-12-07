@@ -19,7 +19,7 @@ header {
 }
 
 header .header-photo {
-    width: 100px;
+    width: 200px;
     height: auto;
     border-radius: 50%;
     object-fit: cover;
