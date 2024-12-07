@@ -50,6 +50,11 @@ header h1 {
 header p {
     font-size: 1.2em;
 }
+.spaced-nav {
+    padding-top: 20px; /* Adds space inside the navigation bar at the top */
+    padding-bottom: 20px; /* Adds space inside the navigation bar at the bottom */
+    margin-bottom: 20px; /* Adds space below the navigation bar */
+}
 
 nav ul {
     list-style-type: none;
