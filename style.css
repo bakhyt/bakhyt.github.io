@@ -88,3 +88,10 @@ a:hover {
     text-decoration: underline;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px; /* Set the width to your desired value */
+    height: auto; /* Maintain the aspect ratio */
+}
