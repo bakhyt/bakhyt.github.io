@@ -63,6 +63,12 @@ header .header-photo {
         display: block;
         margin-bottom: 10px;
     }
+
+    .close-button {
+        font-size: 2em;  /* Larger font size */
+        right: 10px;     /* Adjust position */
+        padding: 5px 10px;  /* Increase padding */
+    }
 }
 
 @media (min-width: 1200px) {
@@ -91,15 +97,9 @@ header p {
 
 /* Navigation links background color */
 nav.spaced-nav ul {
-    list-style-type: disc;  /* Use default bullets */
-    list-style-position: inside;  /* Ensures the bullets are inside the list */
+    list-style-type: none;  /* Remove bullets */
     padding: 0;
     margin: 0;
-}
-
-/* Change the color of the list bullets to white */
-nav.spaced-nav ul li::marker {
-    color: white;  /* Make bullets white */
 }
 
 /* Navigation links styling */
@@ -195,6 +195,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 /* Close button styling */
 .close-button {
     cursor: pointer;
@@ -218,5 +219,3 @@ img {
 .close-button:focus {
     outline: 2px solid #ffcc00;  /* Adds focus outline for accessibility */
 }
-}
-
