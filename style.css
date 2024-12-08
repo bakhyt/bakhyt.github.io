@@ -103,7 +103,7 @@ nav ul li {
 nav ul li a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #006400;  /* Dark green color */
+    background-color: #006400;  /* Dark green color for nav buttons */
     color: white;
     border: none;
     border-radius: 5px;
@@ -115,7 +115,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #004d00;  /* Darker green for hover */
+    background-color: #004d00;  /* Darker green for hover effect */
     text-decoration: underline;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
