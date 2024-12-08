@@ -1,9 +1,4 @@
 window.onload = function() {
-    // Check if the banner has been closed using localStorage
-    if (localStorage.getItem("welcomeBannerClosed") === "true") {
-        return;  // If it's already closed, don't show the banner
-    }
-
     // Create the banner element
     const banner = document.createElement('div');
     banner.style.position = 'fixed';
@@ -50,7 +45,6 @@ window.onload = function() {
     // Close button action
     closeButton.onclick = function() {
         banner.style.opacity = '0'; // Fade out immediately
-        localStorage.setItem("welcomeBannerClosed", "true");  // Save that the banner has been closed
     };
 
     // Append the close button to the banner and the banner to the body
