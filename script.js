@@ -1,4 +1,9 @@
 window.onload = function() {
+    // Check if the banner has already been closed
+    if (localStorage.getItem("welcomeBannerClosed") === "true") {
+        return; // Exit if the banner has been closed previously
+    }
+
     const banner = document.createElement('div');
     banner.style.position = 'fixed';
     banner.style.top = '0';
@@ -11,9 +16,8 @@ window.onload = function() {
     banner.style.zIndex = '1000';
     banner.style.fontFamily = 'Arial, sans-serif';
     banner.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
-    banner.textContent = 'Welcome to my webpage!';
+    banner.textContent = 'Welcome to my GitHub Page!';
 
-    // Create close button
     const closeButton = document.createElement('span');
     closeButton.textContent = ' ✖ ';
     closeButton.style.cursor = 'pointer';
@@ -40,6 +44,7 @@ window.onload = function() {
     // Close button action
     closeButton.onclick = function() {
         banner.style.display = 'none';
+        localStorage.setItem("welcomeBannerClosed", "true");  // Save that the banner has been closed
     };
 
     banner.appendChild(closeButton);
