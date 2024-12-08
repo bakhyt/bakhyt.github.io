@@ -11,7 +11,7 @@ window.onload = function() {
     banner.style.zIndex = '1000';
     banner.style.fontFamily = 'Arial, sans-serif';
     banner.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
-    banner.textContent = 'Welcome to my GitHub Page!';
+    banner.textContent = 'Welcome to my webpage!';
 
     // Create close button
     const closeButton = document.createElement('span');
