@@ -49,4 +49,10 @@ window.onload = function() {
 
     banner.appendChild(closeButton);
     document.body.appendChild(banner);
+
+    // Automatically close the banner after 5 seconds if not closed by the user
+    setTimeout(function() {
+        banner.style.display = 'none';
+        localStorage.setItem("welcomeBannerClosed", "true");  // Save that the banner has been closed after timeout
+    }, 5000);  // 5000 milliseconds = 5 seconds
 };
