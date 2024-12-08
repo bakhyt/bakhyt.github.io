@@ -1,5 +1,5 @@
 window.onload = function() {
-    // Check if the banner has been closed using localStorage
+    // Check if the banner has already been closed using localStorage
     if (localStorage.getItem("welcomeBannerClosed") === "true") {
         return;  // If it's already closed, don't show the banner
     }
