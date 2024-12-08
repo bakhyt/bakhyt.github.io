@@ -85,26 +85,12 @@ header p {
     text-align: center;
     margin: 20px 0;
 }
-
-.spaced-nav {
-    margin: 20px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
+/* Navigation links background color */
+nav.spaced-nav ul li a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #006400;  /* Dark green color for nav buttons */
-    color: white;
+    background-color: #006400;  /* Dark green background color */
+    color: white;  /* White text */
     border: none;
     border-radius: 5px;
     font-size: 1em;
@@ -114,20 +100,20 @@ nav ul li a {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-nav ul li a:hover {
-    background-color: #004d00;  /* Darker green for hover effect */
+nav.spaced-nav ul li a:hover {
+    background-color: #004d00;  /* Darker green for hover */
     text-decoration: underline;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-nav ul li a:focus {
-    outline: 2px solid #ffcc00;
+nav.spaced-nav ul li a:focus {
+    outline: 2px solid #ffcc00;  /* Outline when focused */
 }
 
-nav ul li a.active {
-    background-color: #333;
-    color: #fff;  /* Ensure the text is white on active link */
-    font-weight: bold;
+nav.spaced-nav ul li a.active {
+    background-color: #333;  /* Active link dark background */
+    color: white;  /* Text color white */
+    font-weight: bold;  /* Bold text for active link */
 }
 
 main {
