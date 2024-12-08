@@ -1,10 +1,10 @@
 window.onload = function() {
-    // Check if the user has visited the site before
-    if (localStorage.getItem("firstVisit") !== null) {
-        return;  // If it's not the first visit, do nothing
+    // Check if the banner has been closed using localStorage
+    if (localStorage.getItem("welcomeBannerClosed") === "true") {
+        return;  // If it's already closed, don't show the banner
     }
 
-    // If it's the first visit, create the banner
+    // Create the banner element
     const banner = document.createElement('div');
     banner.style.position = 'fixed';
     banner.style.top = '0';
@@ -17,7 +17,25 @@ window.onload = function() {
     banner.style.zIndex = '1000';
     banner.style.fontFamily = 'Arial, sans-serif';
     banner.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
-    banner.textContent = 'Welcome to my GitHub Page!';
+
+    // Function to fetch country and update the banner text
+    function fetchCountryAndDisplayMessage() {
+        // Use the ipinfo.io API to get the user's country
+        fetch('https://ipinfo.io?token=YOUR_API_KEY')  // Replace 'YOUR_API_KEY' with a valid token
+            .then(response => response.json())
+            .then(data => {
+                // Extract country from the API response
+                const country = data.country;
+                banner.textContent = `Welcome to my GitHub Page! From ${country}`;
+            })
+            .catch(error => {
+                console.error('Error fetching location:', error);
+                banner.textContent = 'Welcome to my GitHub Page!';
+            });
+    }
+
+    // Call the function to display the message with the country
+    fetchCountryAndDisplayMessage();
 
     // Add fade-out transition
     banner.style.transition = 'opacity 10s ease-out';  // Transition for fading out over 10 seconds
@@ -48,7 +66,7 @@ window.onload = function() {
     // Close button action
     closeButton.onclick = function() {
         banner.style.opacity = '0'; // Fade out immediately
-        localStorage.setItem("firstVisit", "false");  // Set that the user has visited
+        localStorage.setItem("welcomeBannerClosed", "true");  // Save that the banner has been closed
     };
 
     // Append the close button to the banner and the banner to the body
@@ -58,6 +76,6 @@ window.onload = function() {
     // Automatically close the banner after 10 seconds if not closed by the user
     setTimeout(function() {
         banner.style.opacity = '0';  // Start fading out after 10 seconds
-        localStorage.setItem("firstVisit", "false");  // Set that the user has visited
+        localStorage.setItem("welcomeBannerClosed", "true");  // Save that the banner has been closed after timeout
     }, 10000);  // 10000 milliseconds = 10 seconds
 };
