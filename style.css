@@ -15,7 +15,7 @@ header {
     background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 50px 0;
+    padding: 50px 20px;  /* Added padding for responsiveness */
 }
 
 header .header-photo {
@@ -26,6 +26,7 @@ header .header-photo {
     margin: 0 auto 15px;
 }
 
+/* Media Query for Mobile */
 @media (max-width: 600px) {
     header {
         padding: 20px;
@@ -46,6 +47,16 @@ header .header-photo {
 
     p {
         margin: 5px 0;
+    }
+
+    nav ul {
+        padding: 0;
+        text-align: center; /* Center navigation links on mobile */
+    }
+
+    nav ul li {
+        display: block;  /* Stack navigation links vertically */
+        margin-bottom: 10px; /* Space between navigation items */
     }
 }
 
