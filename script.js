@@ -18,6 +18,9 @@ window.onload = function() {
     banner.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
     banner.textContent = 'Welcome to my GitHub Page!';
 
+    // Add fade-out transition
+    banner.style.transition = 'opacity 10s ease-out';  // Transition for fading out over 10 seconds
+
     const closeButton = document.createElement('span');
     closeButton.textContent = ' ✖ ';
     closeButton.style.cursor = 'pointer';
@@ -43,7 +46,7 @@ window.onload = function() {
 
     // Close button action
     closeButton.onclick = function() {
-        banner.style.display = 'none';
+        banner.style.opacity = '0'; // Fade out immediately
         localStorage.setItem("welcomeBannerClosed", "true");  // Save that the banner has been closed
     };
 
@@ -52,7 +55,7 @@ window.onload = function() {
 
     // Automatically close the banner after 5 seconds if not closed by the user
     setTimeout(function() {
-        banner.style.display = 'none';
+        banner.style.opacity = '0';  // Start fading out after 5 seconds
         localStorage.setItem("welcomeBannerClosed", "true");  // Save that the banner has been closed after timeout
     }, 5000);  // 5000 milliseconds = 5 seconds
 };
