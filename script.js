@@ -13,6 +13,12 @@ window.onload = function() {
     banner.style.fontFamily = 'Arial, sans-serif';
     banner.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
 
+    // Temporary hardcoded message to test banner visibility
+    banner.textContent = 'Welcome to my GitHub Page! From [Country]'; // Replace with the actual country text later
+
+    // Add fade-out transition
+    banner.style.transition = 'opacity 1s ease-out';  // Transition for fading out over 1 second
+
     // Function to fetch country and update the banner text
     function fetchCountryAndDisplayMessage() {
         // Use the ipinfo.io API to get the user's country (replace 'YOUR_API_KEY' with your actual API key)
@@ -30,9 +36,6 @@ window.onload = function() {
 
     // Call the function to display the message with the country
     fetchCountryAndDisplayMessage();
-
-    // Add fade-out transition
-    banner.style.transition = 'opacity 30s ease-out';  // Transition for fading out over 30 seconds
 
     const closeButton = document.createElement('span');
     closeButton.textContent = ' ✖ ';
@@ -59,6 +62,7 @@ window.onload = function() {
 
     // Close button action
     closeButton.onclick = function() {
+        banner.style.transition = 'opacity 0.5s ease-out'; // Make the transition faster for close action
         banner.style.opacity = '0'; // Fade out immediately
     };
 
