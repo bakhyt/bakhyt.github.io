@@ -42,12 +42,12 @@ window.onload = function() {
     closeButton.style.cursor = 'pointer';
     closeButton.style.position = 'absolute';
     closeButton.style.top = '50%';
-    closeButton.style.right = '20px';
+    closeButton.style.right = '10px';  // Adjusting the position for better visibility on mobile
     closeButton.style.transform = 'translateY(-50%)';
     closeButton.style.fontWeight = 'bold';
     closeButton.style.fontSize = '1.5em';
     closeButton.style.color = 'white';
-    closeButton.style.padding = '0 10px';
+    closeButton.style.padding = '5px 10px';  // Increase padding for better touch interaction
     closeButton.style.borderRadius = '50%';
     closeButton.style.backgroundColor = '#333';
     closeButton.style.transition = 'background-color 0.3s ease';
@@ -62,11 +62,17 @@ window.onload = function() {
 
     // Close button action
     closeButton.onclick = function() {
-        banner.style.transition = 'opacity 0.5s ease-out'; // Make the transition faster for close action
         banner.style.opacity = '0'; // Fade out immediately
     };
 
     // Append the close button to the banner and the banner to the body
     banner.appendChild(closeButton);
     document.body.appendChild(banner);
+
+    // Mobile specific styling
+    if (window.innerWidth <= 600) {
+        // Make the close button slightly bigger on mobile for easier interaction
+        closeButton.style.fontSize = '2em';
+        closeButton.style.right = '10px'; // Adjust for mobile screens
+    }
 };
