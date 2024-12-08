@@ -17,7 +17,7 @@ window.onload = function() {
     banner.textContent = 'Welcome to my GitHub Page! From [Country]'; // Replace with the actual country text later
 
     // Add fade-out transition
-    banner.style.transition = 'opacity 1s ease-out';  // Transition for fading out over 1 second
+    banner.style.transition = 'opacity 30s ease-out';  // Transition for fading out over 1 second
 
     const closeButton = document.createElement('span');
     closeButton.textContent = ' ✖ ';
