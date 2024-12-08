@@ -218,13 +218,5 @@ img {
 .close-button:focus {
     outline: 2px solid #ffcc00;  /* Adds focus outline for accessibility */
 }
-
-/* Mobile-specific styles */
-@media (max-width: 600px) {
-    .close-button {
-        font-size: 2em;  /* Increase font size */
-        right: 10px;     /* Adjust position */
-        padding: 5px 10px;  /* Increase padding */
-    }
 }
 
