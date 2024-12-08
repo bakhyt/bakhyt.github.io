@@ -4,7 +4,7 @@ window.onload = function() {
     banner.style.top = '0';
     banner.style.left = '0';
     banner.style.width = '100%';
-    banner.style.backgroundColor = '#006400';  // Dark green background color
+    banner.style.backgroundColor = '#006400';
     banner.style.color = 'white';
     banner.style.padding = '15px';
     banner.style.textAlign = 'center';
@@ -13,29 +13,9 @@ window.onload = function() {
     banner.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
     banner.textContent = 'Welcome to my GitHub Page!';
 
-    // Create close button
     const closeButton = document.createElement('span');
     closeButton.textContent = ' ✖ ';
-    closeButton.style.cursor = 'pointer';
-    closeButton.style.position = 'absolute';
-    closeButton.style.top = '50%';
-    closeButton.style.right = '20px';
-    closeButton.style.transform = 'translateY(-50%)';
-    closeButton.style.fontWeight = 'bold';
-    closeButton.style.fontSize = '1.5em';
-    closeButton.style.color = 'white';
-    closeButton.style.padding = '0 10px';
-    closeButton.style.borderRadius = '50%';
-    closeButton.style.backgroundColor = '#333';
-    closeButton.style.transition = 'background-color 0.3s ease';
-
-    closeButton.onmouseover = function() {
-        closeButton.style.backgroundColor = '#ff4d4d'; // Change color on hover
-    };
-
-    closeButton.onmouseout = function() {
-        closeButton.style.backgroundColor = '#333'; // Revert color
-    };
+    closeButton.classList.add('close-button');  // Add the CSS class
 
     // Close button action
     closeButton.onclick = function() {
