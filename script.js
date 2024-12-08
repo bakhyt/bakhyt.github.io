@@ -1,9 +1,10 @@
 window.onload = function() {
-    // Check if the banner has already been closed using localStorage
+    // Check if the banner has been closed using localStorage
     if (localStorage.getItem("welcomeBannerClosed") === "true") {
-        return;  // If it's already closed, don't show the banner
+        return;  // If the banner is marked as closed, don't show it again
     }
 
+    // Create the banner element
     const banner = document.createElement('div');
     banner.style.position = 'fixed';
     banner.style.top = '0';
@@ -21,6 +22,7 @@ window.onload = function() {
     // Add fade-out transition
     banner.style.transition = 'opacity 10s ease-out';  // Transition for fading out over 10 seconds
 
+    // Create the close button
     const closeButton = document.createElement('span');
     closeButton.textContent = ' ✖ ';
     closeButton.style.cursor = 'pointer';
@@ -50,6 +52,7 @@ window.onload = function() {
         localStorage.setItem("welcomeBannerClosed", "true");  // Save that the banner has been closed
     };
 
+    // Append the close button to the banner and the banner to the body
     banner.appendChild(closeButton);
     document.body.appendChild(banner);
 
