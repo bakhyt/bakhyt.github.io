@@ -18,24 +18,8 @@ window.onload = function() {
     banner.style.fontFamily = 'Arial, sans-serif';
     banner.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
 
-    // Function to fetch country and update the banner text
-    function fetchCountryAndDisplayMessage() {
-        // Use the ipinfo.io API to get the user's country
-        fetch('https://ipinfo.io?token=YOUR_API_KEY')  // Replace 'YOUR_API_KEY' with a valid token
-            .then(response => response.json())
-            .then(data => {
-                // Extract country from the API response
-                const country = data.country;
-                banner.textContent = `Welcome to my GitHub Page! From ${country}`;
-            })
-            .catch(error => {
-                console.error('Error fetching location:', error);
-                banner.textContent = 'Welcome to my GitHub Page!';
-            });
-    }
-
-    // Call the function to display the message with the country
-    fetchCountryAndDisplayMessage();
+    // Temporary hardcoded message to test banner visibility
+    banner.textContent = 'Welcome to my GitHub Page! From [Country]'; // Replace with the actual country text later
 
     // Add fade-out transition
     banner.style.transition = 'opacity 1s ease-out';  // Transition for fading out over 1 second
