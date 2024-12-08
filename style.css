@@ -15,7 +15,7 @@ header {
     background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 50px 20px;  /* Added padding for responsiveness */
+    padding: 50px 20px;
 }
 
 header .header-photo {
@@ -51,12 +51,12 @@ header .header-photo {
 
     nav ul {
         padding: 0;
-        text-align: center; /* Center navigation links on mobile */
+        text-align: center;
     }
 
     nav ul li {
-        display: block;  /* Stack navigation links vertically */
-        margin-bottom: 10px; /* Space between navigation items */
+        display: block;
+        margin-bottom: 10px;
     }
 }
 
@@ -85,23 +85,23 @@ header p {
 }
 
 .spaced-nav {
-    margin: 20px; /* Adds equal space around the navigation */
+    margin: 20px;
 }
 
 nav ul {
-    list-style-type: none; /* Remove default bullets */
+    list-style-type: none;
     padding: 0;
 }
 
 nav ul li {
-    display: inline; /* Inline items for horizontal layout */
-    margin-right: 20px; /* Space between buttons */
+    display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #006400;  /* Dark green color */
     color: white;
     border: none;
     border-radius: 5px;
@@ -113,13 +113,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #45a049;
+    background-color: #004d00;  /* Darker green for hover */
     text-decoration: underline;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav ul li a:focus {
-    outline: 2px solid #ffcc00; /* Adds focus outline for accessibility */
+    outline: 2px solid #ffcc00;
 }
 
 nav ul li a.active {
@@ -144,7 +144,7 @@ section h2 {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #006400;  /* Dark green for footer */
     color: white;
     border-top: 2px solid #4CAF50;
     box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
