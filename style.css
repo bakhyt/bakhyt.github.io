@@ -195,3 +195,32 @@ img {
     max-width: 100%;
     height: auto;
 }
+/* Default styles for the close button */
+.close-button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    padding: 0 10px;
+    border-radius: 50%;
+    background-color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: #ff4d4d;  /* Change color on hover */
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    .close-button {
+        font-size: 2em;  /* Increase font size */
+        right: 10px;     /* Adjust position */
+        padding: 5px 10px;  /* Increase padding */
+    }
+}
+
