@@ -90,19 +90,20 @@ header p {
 }
 
 /* Navigation links background color */
-/* Remove bullets from the unordered list */
+/* Change bullet color to white */
 nav.spaced-nav ul {
-    list-style-type: none;  /* Removes bullets */
-    padding: 0;             /* Remove any default padding */
-    margin: 0;              /* Remove any default margin */
+    list-style-type: disc;  /* Use default bullets */
+    list-style-position: inside;  /* Ensures the bullets are inside the list */
+    padding: 0;
+    margin: 0;
+}
+
+/* Set bullet color to white */
+nav.spaced-nav ul li {
+    color: white;  /* Set the bullet color to white */
 }
 
 /* Navigation links background color */
-nav.spaced-nav ul li {
-    display: inline;  /* Makes the list items display inline (horizontally) */
-    margin-right: 20px;  /* Adds space between navigation items */
-}
-
 nav.spaced-nav ul li a {
     display: inline-block;
     padding: 10px 20px;
