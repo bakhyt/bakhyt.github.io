@@ -1,8 +1,6 @@
 window.onload = function() {
-    // Check if the banner has already been closed using localStorage
-    if (localStorage.getItem("welcomeBannerClosed") === "true") {
-        return;  // If it's already closed, don't show the banner
-    }
+    // Always clear the welcomeBannerClosed flag so the banner appears again
+    localStorage.removeItem("welcomeBannerClosed");
 
     const banner = document.createElement('div');
     banner.style.position = 'fixed';
@@ -57,5 +55,5 @@ window.onload = function() {
     setTimeout(function() {
         banner.style.opacity = '0';  // Start fading out after 5 seconds
         localStorage.setItem("welcomeBannerClosed", "true");  // Save that the banner has been closed after timeout
-    }, 5000);  // 5000 milliseconds = 5 seconds
+    }, 10000);  // 10000 milliseconds = 10 seconds
 };
