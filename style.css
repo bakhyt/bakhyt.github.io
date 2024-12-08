@@ -195,7 +195,7 @@ img {
     max-width: 100%;
     height: auto;
 }
-/* Default styles for the close button */
+/* Close button styling */
 .close-button {
     cursor: pointer;
     position: absolute;
@@ -213,6 +213,10 @@ img {
 
 .close-button:hover {
     background-color: #ff4d4d;  /* Change color on hover */
+}
+
+.close-button:focus {
+    outline: 2px solid #ffcc00;  /* Adds focus outline for accessibility */
 }
 
 /* Mobile-specific styles */
