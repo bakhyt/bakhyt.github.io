@@ -38,7 +38,7 @@ window.onload = function() {
     fetchCountryAndDisplayMessage();
 
     // Add fade-out transition
-    banner.style.transition = 'opacity 10s ease-out';  // Transition for fading out over 10 seconds
+    banner.style.transition = 'opacity 1s ease-out';  // Transition for fading out over 1 second
 
     const closeButton = document.createElement('span');
     closeButton.textContent = ' ✖ ';
@@ -72,10 +72,4 @@ window.onload = function() {
     // Append the close button to the banner and the banner to the body
     banner.appendChild(closeButton);
     document.body.appendChild(banner);
-
-    // Automatically close the banner after 10 seconds if not closed by the user
-    setTimeout(function() {
-        banner.style.opacity = '0';  // Start fading out after 10 seconds
-        localStorage.setItem("welcomeBannerClosed", "true");  // Save that the banner has been closed after timeout
-    }, 10000);  // 10000 milliseconds = 10 seconds
 };
