@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function() { 
     // Create the banner element
     const banner = document.createElement('div');
     banner.style.position = 'fixed';
@@ -13,8 +13,23 @@ window.onload = function() {
     banner.style.fontFamily = 'Arial, sans-serif';
     banner.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
 
-    // Temporary hardcoded message to test banner visibility
-    banner.textContent = 'Welcome to my GitHub Page! From [Country]'; // Replace with the actual country text later
+    // Function to fetch country and update the banner text
+    function fetchCountryAndDisplayMessage() {
+        // Use the ipinfo.io API to get the user's country (replace 'YOUR_API_KEY' with your actual API key)
+        fetch('https://ipinfo.io?token=YOUR_API_KEY') 
+            .then(response => response.json())
+            .then(data => {
+                const country = data.country;  // Extract country from the API response
+                banner.textContent = `Welcome to my GitHub Page! From ${country}`;  // Display country
+            })
+            .catch(error => {
+                console.error('Error fetching location:', error);
+                banner.textContent = 'Welcome to my GitHub Page!';  // Fallback if API fails
+            });
+    }
+
+    // Call the function to display the message with the country
+    fetchCountryAndDisplayMessage();
 
     // Add fade-out transition
     banner.style.transition = 'opacity 30s ease-out';  // Transition for fading out over 30 seconds
