@@ -24,6 +24,7 @@ header .header-photo {
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 15px;
+    max-width: 100%;  /* Make the image responsive */
 }
 
 /* Media Query for Mobile */
@@ -35,6 +36,7 @@ header .header-photo {
     header .header-photo {
         width: 80px;
         height: 80px;
+        max-width: 80px; /* Ensure max-width on small screens */
     }
 
     h1 {
@@ -124,7 +126,7 @@ nav ul li a:focus {
 
 nav ul li a.active {
     background-color: #333;
-    color: #fff;
+    color: #fff;  /* Ensure the text is white on active link */
     font-weight: bold;
 }
 
