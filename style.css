@@ -100,20 +100,23 @@ nav.spaced-nav ul li a {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Ensure the active link background color is applied */
+nav.spaced-nav ul li a.active {
+    background-color: #006400;  /* Dark green for active link */
+    color: white;  /* White text */
+    font-weight: bold;  /* Bold text for active link */
+}
+
+/* Hover effect */
 nav.spaced-nav ul li a:hover {
     background-color: #004d00;  /* Darker green for hover */
     text-decoration: underline;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Focused state */
 nav.spaced-nav ul li a:focus {
     outline: 2px solid #ffcc00;  /* Outline when focused */
-}
-
-nav.spaced-nav ul li a.active {
-    background-color: #333;  /* Active link dark background */
-    color: white;  /* Text color white */
-    font-weight: bold;  /* Bold text for active link */
 }
 
 main {
